@@ -7,7 +7,7 @@
   - [Endpoints Details](#endpoints-details)
   - [Parameters](#parameters)
   - [Response](#response)
-  - [Pottential Errors](#potential-errors)
+  - [Potential Errors](#potential-errors)
 * [User Interface](#user-interface)
 * [Explanations](#explanations)
   - [Scraping Algorithm](#scraping-algorithm)
