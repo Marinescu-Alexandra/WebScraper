@@ -32,16 +32,16 @@ To run this project you must have valid Node and Angular versions installed.
 
 To run the Frontend server do:
 ```
-$ cd Frontend
-$ npm install
-$ ng serve
+cd Frontend
+npm install
+ng serve
 ```
 
 To run the Backend server do:
 ```
-$ cd Backend
-$ npm install
-$ node .\index.js
+cd Backend
+npm install
+node .\index.js
 ```
 
 ## API Usage
