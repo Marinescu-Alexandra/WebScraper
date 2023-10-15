@@ -18,7 +18,7 @@
 
 
 ## General info
-This project is simple web scrapping application, meant to scrape content from https://wsa-test.vercel.app/. The scraped data is returned in a JSON format, and can be filtered by multiple queries.
+This project is simple web scraping application, meant to scrape content from https://wsa-test.vercel.app/. The scraped data is returned in a JSON format, and can be filtered by multiple queries.
 The scraped data is displayed on a frontend server and can be easily copied with a button.
 	
 ## Technologies
