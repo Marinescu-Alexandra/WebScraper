@@ -1,0 +1,21 @@
+<div class="web-scraper-container">
+	<div class="title">Web Scraper</div>
+	<div class="search-container">
+		<input class="search-input" type="text" [(ngModel)]="searchQuery" (keyup.enter)="performSearch()"
+			placeholder="{{defaultUrl}}">
+		<button class="search-button" (click)="performSearch()"><i class="fas fa-search"></i></button>
+	</div>
+
+
+	<div class="result-container">
+        <button class="upper-button" (click)="copyToClipboard()" [disabled]="!searchResult">COPY</button>
+        <button class="upper-button" (click)="openFilterDialog()">FILTERS</button>
+        <div class="container">
+            <div class="loading-spinner" *ngIf="isLoading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <pre class="result" [ngStyle]="{'color': isError ? 'red' : 'black' }" *ngIf="searchResult">{{searchResult | json}}</pre>
+        </div>
+	</div>
+    
+</div>

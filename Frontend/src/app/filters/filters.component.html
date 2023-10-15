@@ -1,0 +1,29 @@
+<mat-dialog-content>
+    <div class="main-dialog-container">
+        <mat-form-field class="field-wrapper">
+            <input matInput placeholder="Sentiment" [(ngModel)]="filters.sentiment">
+        </mat-form-field>
+
+        <mat-form-field class="field-wrapper">
+            <input matInput placeholder="Category" [(ngModel)]="filters.category">
+        </mat-form-field>
+
+        <mat-form-field class="field-wrapper">
+            <input matInput [matDatepicker]="minDatePicker" placeholder="Min Date" [(ngModel)]="filters.minIsoDate">
+            <mat-datepicker-toggle matSuffix [for]="minDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #minDatePicker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field class="field-wrapper">
+            <input matInput [matDatepicker]="maxDatePicker" placeholder="Max Date" [(ngModel)]="filters.maxIsoDate">
+            <mat-datepicker-toggle matSuffix [for]="maxDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #maxDatePicker></mat-datepicker>
+        </mat-form-field>
+
+        <div>
+            <mat-checkbox class="blog-checkbox" [(ngModel)]="filters.blogContent">Blog Content</mat-checkbox>
+        </div>
+
+        <button mat-button (click)="applyFilters()">Apply Filters</button>
+    </div>
+</mat-dialog-content>
