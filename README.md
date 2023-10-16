@@ -107,7 +107,7 @@ Upon successful execution, the API will return a list of objects. Each object co
 - `author_avatar`: URL of the author's avatar or image. Type: `string` or `null`.
 - `author_name`: Name of the post's author. Type: `string` or `null`.
 - `author_profession`: Profession or title of the post's author. Type: `string` or `null`.
-- `words`: Number of words in the post. Type: `int` or `null`.
+- `words`: Number of words in the blog post, excluding the words from navigation links. Type: `int` or `null`.
 - `blog_content`: Content of the blog post. Type: `string` or `null`.
 
 ### Potential Errors:
